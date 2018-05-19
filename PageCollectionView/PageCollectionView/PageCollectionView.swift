@@ -69,7 +69,7 @@ class PageCollectionView: UIView {
         
         let collectionview = UICollectionView(frame: collectionFrame, collectionViewLayout: layout)
         
-        collectionview.backgroundColor = UIColor.red
+        collectionview.backgroundColor = UIColor.white
         self.collectionView = collectionview
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -89,7 +89,7 @@ class PageCollectionView: UIView {
         
         //配置下方 pageControl
         pageControlContainer = UIView(frame: CGRect(x: 0, y: frame.height - 20, width: frame.width, height: 20))
-        pageControlContainer.backgroundColor = UIColor.orange
+        pageControlContainer.backgroundColor = UIColor.lightGray
         pageControl = PillPageControl(frame: pageControlContainer.bounds)
         pageControlContainer.addSubview(pageControl)
         addSubview(pageControlContainer)

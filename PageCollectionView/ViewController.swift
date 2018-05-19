@@ -17,13 +17,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        for i in 0..<18{
+        for i in 0..<28 {
             data.append(String(i))
         }
         
-        let rect = CGRect(x: 0, y: view.bounds.height - 166, width: view.bounds.width, height: 166)
-        pageCollectionView = PageCollectionView(frame: rect, itemCountPerRow: 4, rowCountPerPage: 2, cellNibName: ["HomeCollectionViewCell"])
         
+        let row: Int = 3
+        let counOfRow: Int = 4
+        
+        
+        let rect = CGRect(x: 0, y: view.bounds.height - 166, width: view.bounds.width, height: 166)
+        pageCollectionView = PageCollectionView(frame: rect, itemCountPerRow: counOfRow, rowCountPerPage: row, cellNibName: ["HomeCollectionViewCell"])
         pageCollectionView.configCellForItem { [weak self] (collectionView, indexPath) -> UICollectionViewCell in
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCollectionViewCell", for: indexPath) as! HomeCollectionViewCell
             cell.config(text: (self?.data[indexPath.row])!)
