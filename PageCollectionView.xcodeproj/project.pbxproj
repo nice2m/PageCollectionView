@@ -14,6 +14,13 @@
 		F7C58DAC20AFF56000EF8083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C58DAA20AFF56000EF8083 /* LaunchScreen.storyboard */; };
 		F7C58DB720AFF56000EF8083 /* PageCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C58DB620AFF56000EF8083 /* PageCollectionViewTests.swift */; };
 		F7C58DC220AFF56000EF8083 /* PageCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C58DC120AFF56000EF8083 /* PageCollectionViewUITests.swift */; };
+		F7C58DD120AFF5C300EF8083 /* PillControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C58DD020AFF5C300EF8083 /* PillControl.swift */; };
+		F7C58DD320AFF5E100EF8083 /* PageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C58DD220AFF5E100EF8083 /* PageCollectionView.swift */; };
+		F7C58DD520AFF60100EF8083 /* PageCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C58DD420AFF60100EF8083 /* PageCollectionViewLayout.swift */; };
+		F7C58DE020B0127F00EF8083 /* PageCollectionViewPlaceHolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C58DDE20B0127F00EF8083 /* PageCollectionViewPlaceHolderCell.swift */; };
+		F7C58DE120B0127F00EF8083 /* PageCollectionViewPlaceHolderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C58DDF20B0127F00EF8083 /* PageCollectionViewPlaceHolderCell.xib */; };
+		F7C58DE420B0172900EF8083 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C58DE220B0172900EF8083 /* HomeCollectionViewCell.swift */; };
+		F7C58DE520B0172900EF8083 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C58DE320B0172900EF8083 /* HomeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		F7C58DBD20AFF56000EF8083 /* PageCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C58DC120AFF56000EF8083 /* PageCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionViewUITests.swift; sourceTree = "<group>"; };
 		F7C58DC320AFF56000EF8083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C58DD020AFF5C300EF8083 /* PillControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillControl.swift; sourceTree = "<group>"; };
+		F7C58DD220AFF5E100EF8083 /* PageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionView.swift; sourceTree = "<group>"; };
+		F7C58DD420AFF60100EF8083 /* PageCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionViewLayout.swift; sourceTree = "<group>"; };
+		F7C58DDE20B0127F00EF8083 /* PageCollectionViewPlaceHolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionViewPlaceHolderCell.swift; sourceTree = "<group>"; };
+		F7C58DDF20B0127F00EF8083 /* PageCollectionViewPlaceHolderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageCollectionViewPlaceHolderCell.xib; sourceTree = "<group>"; };
+		F7C58DE220B0172900EF8083 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7C58DE320B0172900EF8083 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +111,11 @@
 		F7C58DA020AFF56000EF8083 /* PageCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				F7C58DCF20AFF56E00EF8083 /* PageCollectionView */,
 				F7C58DA120AFF56000EF8083 /* AppDelegate.swift */,
 				F7C58DA320AFF56000EF8083 /* ViewController.swift */,
+				F7C58DE220B0172900EF8083 /* HomeCollectionViewCell.swift */,
+				F7C58DE320B0172900EF8083 /* HomeCollectionViewCell.xib */,
 				F7C58DA520AFF56000EF8083 /* Main.storyboard */,
 				F7C58DA820AFF56000EF8083 /* Assets.xcassets */,
 				F7C58DAA20AFF56000EF8083 /* LaunchScreen.storyboard */,
@@ -123,6 +140,18 @@
 				F7C58DC320AFF56000EF8083 /* Info.plist */,
 			);
 			path = PageCollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		F7C58DCF20AFF56E00EF8083 /* PageCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F7C58DD220AFF5E100EF8083 /* PageCollectionView.swift */,
+				F7C58DD420AFF60100EF8083 /* PageCollectionViewLayout.swift */,
+				F7C58DDE20B0127F00EF8083 /* PageCollectionViewPlaceHolderCell.swift */,
+				F7C58DDF20B0127F00EF8083 /* PageCollectionViewPlaceHolderCell.xib */,
+				F7C58DD020AFF5C300EF8083 /* PillControl.swift */,
+			);
+			path = PageCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +261,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C58DE520B0172900EF8083 /* HomeCollectionViewCell.xib in Resources */,
 				F7C58DAC20AFF56000EF8083 /* LaunchScreen.storyboard in Resources */,
+				F7C58DE120B0127F00EF8083 /* PageCollectionViewPlaceHolderCell.xib in Resources */,
 				F7C58DA920AFF56000EF8083 /* Assets.xcassets in Resources */,
 				F7C58DA720AFF56000EF8083 /* Main.storyboard in Resources */,
 			);
@@ -259,8 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7C58DE420B0172900EF8083 /* HomeCollectionViewCell.swift in Sources */,
+				F7C58DD120AFF5C300EF8083 /* PillControl.swift in Sources */,
 				F7C58DA420AFF56000EF8083 /* ViewController.swift in Sources */,
 				F7C58DA220AFF56000EF8083 /* AppDelegate.swift in Sources */,
+				F7C58DE020B0127F00EF8083 /* PageCollectionViewPlaceHolderCell.swift in Sources */,
+				F7C58DD520AFF60100EF8083 /* PageCollectionViewLayout.swift in Sources */,
+				F7C58DD320AFF5E100EF8083 /* PageCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TKA5QRRRJ4;
 				INFOPLIST_FILE = PageCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nice2Meet.PageCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TKA5QRRRJ4;
 				INFOPLIST_FILE = PageCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nice2Meet.PageCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
